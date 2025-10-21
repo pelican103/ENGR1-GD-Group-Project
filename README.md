@@ -1,2 +1,2 @@
-# ENGR1-GD (Group Project(
+# ENGR1-GD (Group Project)
 Orange Chicken
