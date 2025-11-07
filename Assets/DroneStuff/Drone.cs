@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Drone : MonoBehaviour
 {
@@ -7,19 +8,19 @@ public class Drone : MonoBehaviour
     float recover = 1.5f;
     bool located = false;
 
-    Animator anim; 
+    Animator anim;
+
+    [SerializeField] GameObject porj; 
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         anim.SetFloat("Direction", direction);
-        Debug.Log(direction);
+        //Debug.Log(direction);
     }
 
     void FixedUpdate()
@@ -52,7 +53,7 @@ public class Drone : MonoBehaviour
                     DetectPlayer();
         }
     }
-    
+
     void DetectPlayer()
     {
         Vector2 dir = Vector2.zero;
@@ -78,12 +79,12 @@ public class Drone : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, visionDist);
 
         // to visualize
-        Debug.DrawRay(transform.position, dir * visionDist, Color.red);
+        //Debug.DrawRay(transform.position, dir * visionDist, Color.red);
 
         //check for player hit
         if (hit.collider != null && hit.collider.CompareTag("Player"))
         {
-            located = true; 
+            located = true;
             if (direction < 1f)
             {
                 anim.SetTrigger("AtkDown");
@@ -100,6 +101,27 @@ public class Drone : MonoBehaviour
             {
                 anim.SetTrigger("AtkRight");
             }
+            StartCoroutine(ShootProjectile());
         }
+    }
+
+    IEnumerator ShootProjectile()
+    {
+        yield return new WaitForSeconds(0.2f);
+        
+        GameObject projo = Instantiate(porj, transform.position, Quaternion.identity);
+        Projectile projectileScript = projo.GetComponent<Projectile>();
+        projectileScript.Init(this);
+        //Debug.Log("spawned");
+    }
+
+    public float GetDirection()
+    {
+        return (direction);
+    }
+    
+    public float GetDistance()
+    {
+        return (visionDist);
     }
 }
