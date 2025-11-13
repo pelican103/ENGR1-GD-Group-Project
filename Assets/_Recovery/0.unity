@@ -6864,14 +6864,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   speed: 200
   rollCD: 6
-  rollDistance: 6
-  rollSpeed: 12
   rollIframes: 6
-  attackCD: 10
+  attackCD: 20
   attackDMG: 6
   attackLinger: 8
-  action_counter: 0
-  roll_counter: 0
 --- !u!95 &2125228816
 Animator:
   serializedVersion: 7
