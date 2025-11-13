@@ -4,7 +4,7 @@ using UnityEngine.Rendering.Universal;
 public class VisionShrink : MonoBehaviour
 {
     [SerializeField] private Light2D playerLight;
-    [SerializeField] private float duration = 10f;
+    [SerializeField] private float duration = 12f;
     [SerializeField] private float endRadius = 1.0f;
 
     private float startRadius;
