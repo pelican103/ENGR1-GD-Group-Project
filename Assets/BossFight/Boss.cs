@@ -23,12 +23,14 @@ public class Boss : MonoBehaviour
 
     void Update()
     {
-        if (!startedSpawning && AllWiresGone())
+        if (!startedSpawning && !AllWiresGone())
         {
             startedSpawning = true;
 
             StartCoroutine(SpawnLoop());
         }
+
+        
     }
 
     bool AllWiresGone()
@@ -44,10 +46,12 @@ public class Boss : MonoBehaviour
     IEnumerator SpawnGrabber()
     {
         yield return null;
-        
+
         Vector2 spawnPos = new Vector2(Random.Range(xRange.x, xRange.y),Random.Range(yRange.x, yRange.y));
 
         GameObject newgrabby = Instantiate(grab, spawnPos, Quaternion.identity);
+
+        //Debug.Log("spawned");
     }
 
     IEnumerator SpawnLoop()
@@ -56,7 +60,7 @@ public class Boss : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(minSpawnTime, maxSpawnTime));
 
-            SpawnGrabber();
+            StartCoroutine(SpawnGrabber());
         }
     }
 }

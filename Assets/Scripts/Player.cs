@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (animator==null) return;
+        
         animator.SetInteger ("Dir"      , (int)(direction.y + (2 * direction.x)));
         animator.SetBool    ("Moving"   , input2d != Vector2.zero);
     }
@@ -62,6 +64,9 @@ public class Player : MonoBehaviour
         }
 
         // Physics Handling
+
+        if (rb == null) return;
+
         rb.linearVelocity = dir * tSpeed * Time.deltaTime;
         pen.transform.localPosition = direction;
     }

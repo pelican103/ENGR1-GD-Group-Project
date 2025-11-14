@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0435db1f5e7397f4aa3b89ef3c085fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grabber
-  speed: 4
+  speed: 3
   offset: 45
 --- !u!50 &1614364625169988679
 Rigidbody2D:
@@ -402,7 +402,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

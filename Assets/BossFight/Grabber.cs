@@ -36,14 +36,15 @@ public class Grabber : MonoBehaviour
         distance = Vector2.Distance(playerPos, myPos);
         Vector2 direction = (playerPos - myPos).normalized;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.rotation = angle + offset;
+        
 
         //attack when in distance
-        if (distance > 0.5f)
+        if (distance > 0.5f && !isDestroying)
         {
             rb.linearVelocity = direction * speed;
+            rb.rotation = angle + offset;
         }
-        else if (!isDestroying)
+        else // if (!isDestroying)
         {
             rb.linearVelocity = Vector2.zero;
             StartCoroutine(DestroyAfterDelay());
