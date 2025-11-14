@@ -5,9 +5,16 @@ public class Boss : MonoBehaviour
 {
 
     [SerializeField] GameObject grab;
-    [SerializeField] GameObject wireList;
+    [SerializeField] GameObject[] wires;
+
+    [SerializeField] float minSpawnTime = 1f;
+    [SerializeField] float maxSpawnTime = 3f;
+
+    [SerializeField] Vector2 xRange = new Vector2(-5f, 5f);
+    [SerializeField] Vector2 yRange = new Vector2(-3f, 3f);
 
     Animator anim;
+    bool startedSpawning = false;
     
     void Start()
     {
@@ -16,18 +23,40 @@ public class Boss : MonoBehaviour
 
     void Update()
     {
-        // check if all wires are gone
-        // if so, play animation
-        // 
+        if (!startedSpawning && AllWiresGone())
+        {
+            startedSpawning = true;
+
+            StartCoroutine(SpawnLoop());
+        }
+    }
+
+    bool AllWiresGone()
+    {
+        foreach (var wire in wires)
+        {
+            if (wire != null) return false;
+        }
+
+        return true;
     }
     
     IEnumerator SpawnGrabber()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return null;
         
-        GameObject newgrabby = Instantiate(grab, transform.position, Quaternion.identity);
-        Grabber grabberScript = newgrabby.GetComponent<Grabber>();
-        grabberScript.Init();
-        //Debug.Log("spawned");
+        Vector2 spawnPos = new Vector2(Random.Range(xRange.x, xRange.y),Random.Range(yRange.x, yRange.y));
+
+        GameObject newgrabby = Instantiate(grab, spawnPos, Quaternion.identity);
+    }
+
+    IEnumerator SpawnLoop()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(minSpawnTime, maxSpawnTime));
+
+            SpawnGrabber();
+        }
     }
 }

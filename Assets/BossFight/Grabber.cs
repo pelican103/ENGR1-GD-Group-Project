@@ -11,8 +11,7 @@ public class Grabber : MonoBehaviour
 
     bool isDestroying = false;
     Animator anim;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         var go = GameObject.FindWithTag("Player");
@@ -21,7 +20,7 @@ public class Grabber : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if (player == null)
