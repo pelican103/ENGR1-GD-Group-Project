@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: neo_zero_buildings_02_53
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -809039789, guid: a1329bb710a1d9e4fa6ef1388c4ef708, type: 3}
+  m_Sprite: {fileID: -729826624, guid: e7d1285c134d63140b20ab88f7a93585, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

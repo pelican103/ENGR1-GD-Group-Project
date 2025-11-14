@@ -5,6 +5,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] float speed = 1f;
     [SerializeField] float stopDistance = 0.8f;
 
+    [SerializeField] float attackRange = 1f;
+    [SerializeField] GameObject AttackHitbox;
+
     [SerializeField] Transform player;
     [SerializeField] Rigidbody2D enemy;
     [SerializeField] SpriteRenderer spriteRenderer;
@@ -20,7 +23,9 @@ public class Enemy : MonoBehaviour
         enemy = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentTarget = pointA;
-
+        
+        if (AttackHitbox != null)
+            AttackHitbox.SetActive(false);
     }
 
     void Update()
@@ -63,6 +68,9 @@ public class Enemy : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, player.position);
 
+        speed = 3f;
+        enemy.linearVelocity = direction * speed;
+
         //flippy!
         if (player.position.x < transform.position.x)
         {
@@ -80,11 +88,25 @@ public class Enemy : MonoBehaviour
         else
         {
             enemy.linearVelocity = Vector2.zero;
-
         }
 
     }
 
+    void AttackPlayer()
+    {
+        if (AttackHitbox != null)
+        {
+            AttackHitbox.SetActive(true);
+            Debug.Log("Hi");
+        }
+    }
+
+
+    void DisableAttackHitbox()
+    {
+        if (AttackHitbox != null)
+            AttackHitbox.SetActive(false);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -92,9 +114,10 @@ public class Enemy : MonoBehaviour
         {
             playerInRange = true;
             player = other.transform;
+            AttackPlayer();
         }
     }
-
+/*
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -102,5 +125,5 @@ public class Enemy : MonoBehaviour
             playerInRange = false;
         }
     }
-
+*/
 }

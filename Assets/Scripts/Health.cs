@@ -28,6 +28,7 @@ public class Health : MonoBehaviour
 
                 //xlamping so health never goes below zero
                 currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+                Debug.Log(currentHealth);
             }
             else
             {

@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: a228021ee92213244a6cfcc7f2523d92
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2917137953394048546
+    second: Jenny Attack_0
+  - first:
+      213: 335296947634920396
+    second: Jenny Attack_1
+  - first:
+      213: 2376333012552999612
+    second: Jenny Attack_2
+  - first:
+      213: 7431804448841677206
+    second: Jenny Attack_3
+  - first:
+      213: 7537785508971387803
+    second: Jenny Attack_4
+  - first:
+      213: 6929257072969003395
+    second: Jenny Attack_5
+  - first:
+      213: -1591080239346168164
+    second: Jenny Attack_6
+  - first:
+      213: 8165794414088912923
+    second: Jenny Attack_7
+  - first:
+      213: 1586467295816120367
+    second: Jenny Attack_8
+  - first:
+      213: 3115373710219300257
+    second: Jenny Attack_9
+  - first:
+      213: -7758461338533042891
+    second: Jenny Attack_10
+  - first:
+      213: 7406805286891795460
+    second: Jenny Attack_11
+  - first:
+      213: 2393519159108282948
+    second: Jenny Attack_12
+  - first:
+      213: 4940983852134224472
+    second: Jenny Attack_13
+  - first:
+      213: -8593911534530337857
+    second: Jenny Attack_14
+  - first:
+      213: -1821748189586522095
+    second: Jenny Attack_15
+  - first:
+      213: -7119595209367703772
+    second: Jenny Attack_16
+  - first:
+      213: 8627048063657288660
+    second: Jenny Attack_17
+  - first:
+      213: 6358625880221435680
+    second: Jenny Attack_18
+  - first:
+      213: -5530560156653084522
+    second: Jenny Attack_19
+  - first:
+      213: -5859364642405697612
+    second: Jenny Attack_20
+  - first:
+      213: -2975471187486582371
+    second: Jenny Attack_21
+  - first:
+      213: 4769860522601968699
+    second: Jenny Attack_22
+  - first:
+      213: 6361705636401094520
+    second: Jenny Attack_23
+  - first:
+      213: -8959108178105554965
+    second: Jenny Attack_24
+  - first:
+      213: -6632561422893429837
+    second: Jenny Attack_25
+  - first:
+      213: -2374671653558520629
+    second: Jenny Attack_26
+  - first:
+      213: 3222436531388388263
+    second: Jenny Attack_27
+  - first:
+      213: -479684450339303722
+    second: Jenny Attack_28
+  - first:
+      213: -4958796724288820647
+    second: Jenny Attack_29
+  - first:
+      213: -5530161838053617237
+    second: Jenny Attack_30
+  - first:
+      213: -2541527342487328958
+    second: Jenny Attack_31
+  - first:
+      213: 8980023331866385171
+    second: Jenny Attack_32
+  - first:
+      213: -5160888542715980641
+    second: Jenny Attack_33
+  - first:
+      213: -720432818177168021
+    second: Jenny Attack_34
+  - first:
+      213: 6667779124486001827
+    second: Jenny Attack_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jenny Attack_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 605
+        width: 86
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1432fac7e3487d0800000000000000
+      internalID: -2917137953394048546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 635
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb5d022cc637a400800000000000000
+      internalID: 335296947634920396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 623
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb26149d84e6af020800000000000000
+      internalID: 2376333012552999612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 599
+        width: 104
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699306555c2132760800000000000000
+      internalID: 7431804448841677206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_4
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 599
+        width: 104
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b9357cbf79b9860800000000000000
+      internalID: 7537785508971387803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_5
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 605
+        width: 92
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3813ea7589aa92060800000000000000
+      internalID: 6929257072969003395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 413
+        width: 92
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ec0a4c3f85be9e0800000000000000
+      internalID: -1591080239346168164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_7
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 413
+        width: 92
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1083a061cab25170800000000000000
+      internalID: 8165794414088912923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 413
+        width: 152
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28f4ee9993440610800000000000000
+      internalID: 1586467295816120367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_9
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 413
+        width: 98
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad463c22e70c3b20800000000000000
+      internalID: 3115373710219300257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_10
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 497
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535e229c488645490800000000000000
+      internalID: -7758461338533042891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 461
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404bbad5a224ac660800000000000000
+      internalID: 7406805286891795460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_12
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 467
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44aadb96efc773120800000000000000
+      internalID: 2393519159108282948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_13
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 431
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852d66392a6e19440800000000000000
+      internalID: 4940983852134224472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 443
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3ef29edfa4cb880800000000000000
+      internalID: -8593911534530337857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_15
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 431
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1100c717ca9d7b6e0800000000000000
+      internalID: -1821748189586522095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 215
+        width: 116
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fa019d0ed123d90800000000000000
+      internalID: -7119595209367703772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_17
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 215
+        width: 134
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3a38e718e69b770800000000000000
+      internalID: 8627048063657288660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_18
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 215
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02744327c806e3850800000000000000
+      internalID: 6358625880221435680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_19
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 233
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690a3c5f6d08f33b0800000000000000
+      internalID: -5530560156653084522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_20
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 221
+        width: 44
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7bce7e6ea5faea0800000000000000
+      internalID: -5859364642405697612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_21
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 215
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99d37e38b005b6d0800000000000000
+      internalID: -2975471187486582371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_22
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 293
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3479dd9fd2f13240800000000000000
+      internalID: 4769860522601968699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_23
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 275
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f994f0291594850800000000000000
+      internalID: 6361705636401094520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_24
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 251
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7a8b3549adaa380800000000000000
+      internalID: -8959108178105554965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_25
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 239
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb4a75d68864f3a0800000000000000
+      internalID: -6632561422893429837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_26
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 221
+        width: 20
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4747f66b87b0fd0800000000000000
+      internalID: -2374671653558520629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_27
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 23
+        width: 122
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a395acb3f468bc20800000000000000
+      internalID: 3222436531388388263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_28
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 23
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de4f3da881d759f0800000000000000
+      internalID: -479684450339303722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_29
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 23
+        width: 44
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ae46fe6a0de2bb0800000000000000
+      internalID: -4958796724288820647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_30
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 23
+        width: 146
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1946cbb1be043b0800000000000000
+      internalID: -5530161838053617237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_31
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 101
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247a91cf85eaabcd0800000000000000
+      internalID: -2541527342487328958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_32
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 23
+        width: 146
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b9d9264a37f9c70800000000000000
+      internalID: 8980023331866385171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_33
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 41
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94d706c637d068b0800000000000000
+      internalID: -5160888542715980641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_34
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 53
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d240c3b228006f0800000000000000
+      internalID: -720432818177168021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jenny Attack_35
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 29
+        width: 20
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4d0cb49c5b88c50800000000000000
+      internalID: 6667779124486001827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jenny Attack_0: -2917137953394048546
+      Jenny Attack_1: 335296947634920396
+      Jenny Attack_10: -7758461338533042891
+      Jenny Attack_11: 7406805286891795460
+      Jenny Attack_12: 2393519159108282948
+      Jenny Attack_13: 4940983852134224472
+      Jenny Attack_14: -8593911534530337857
+      Jenny Attack_15: -1821748189586522095
+      Jenny Attack_16: -7119595209367703772
+      Jenny Attack_17: 8627048063657288660
+      Jenny Attack_18: 6358625880221435680
+      Jenny Attack_19: -5530560156653084522
+      Jenny Attack_2: 2376333012552999612
+      Jenny Attack_20: -5859364642405697612
+      Jenny Attack_21: -2975471187486582371
+      Jenny Attack_22: 4769860522601968699
+      Jenny Attack_23: 6361705636401094520
+      Jenny Attack_24: -8959108178105554965
+      Jenny Attack_25: -6632561422893429837
+      Jenny Attack_26: -2374671653558520629
+      Jenny Attack_27: 3222436531388388263
+      Jenny Attack_28: -479684450339303722
+      Jenny Attack_29: -4958796724288820647
+      Jenny Attack_3: 7431804448841677206
+      Jenny Attack_30: -5530161838053617237
+      Jenny Attack_31: -2541527342487328958
+      Jenny Attack_32: 8980023331866385171
+      Jenny Attack_33: -5160888542715980641
+      Jenny Attack_34: -720432818177168021
+      Jenny Attack_35: 6667779124486001827
+      Jenny Attack_4: 7537785508971387803
+      Jenny Attack_5: 6929257072969003395
+      Jenny Attack_6: -1591080239346168164
+      Jenny Attack_7: 8165794414088912923
+      Jenny Attack_8: 1586467295816120367
+      Jenny Attack_9: 3115373710219300257
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
