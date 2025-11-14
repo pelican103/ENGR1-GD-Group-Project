@@ -3,9 +3,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
+    [SerializeField] float chaseSpeed = 3f;
     [SerializeField] float stopDistance = 0.8f;
 
     [SerializeField] float attackRange = 1f;
+    [SerializeField] float attackCooldown = 1.5f;
     [SerializeField] GameObject AttackHitbox;
 
     [SerializeField] Transform player;
@@ -15,13 +17,19 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform pointA;
     [SerializeField] Transform pointB;
     [SerializeField] Transform currentTarget;
+    [SerializeField] Animator animator;
 
+    
     private bool playerInRange = false;
+    private float lastAttackTime = -99f;
 
     void Start()
     {
         enemy = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        animator = GetComponent<Animator>();
+
         currentTarget = pointA;
         
         if (AttackHitbox != null)
@@ -46,7 +54,9 @@ public class Enemy : MonoBehaviour
         Vector2 direction = (currentTarget.position - transform.position).normalized;
         enemy.linearVelocity = direction * speed;
 
-        spriteRenderer.flipX = direction.x < 0;
+        animator.SetFloat("MoveX", direction.x);
+        animator.SetFloat("MoveY", direction.y);
+        animator.SetFloat("Speed", enemy.linearVelocity.magnitude);
 
         float checkpoint_distance = Vector2.Distance(transform.position, currentTarget.position);
         if (checkpoint_distance < 0.2f)
@@ -67,45 +77,60 @@ public class Enemy : MonoBehaviour
         Vector2 direction = (player.position - transform.position).normalized;
 
         float distance = Vector2.Distance(transform.position, player.position);
-
-        speed = 3f;
-        enemy.linearVelocity = direction * speed;
-
-        //flippy!
-        if (player.position.x < transform.position.x)
+ 
+        if (distance <= attackRange && Time.time >= lastAttackTime + attackCooldown)
         {
-            spriteRenderer.flipX = true;
+            Attack();
         }
-        else
+        // Only chase if outside the stop distance
+        else if (distance > stopDistance)
         {
-            spriteRenderer.flipX = false;
+            enemy.linearVelocity = direction * chaseSpeed;
+            animator.SetFloat("Speed", enemy.linearVelocity.magnitude);
         }
-        //stop when close enough
-        if (distance > stopDistance)
-        {
-            enemy.linearVelocity = direction * speed;
-        }
+        // If inside stop distance but not attacking, stop
         else
         {
             enemy.linearVelocity = Vector2.zero;
+            animator.SetFloat("Speed", 0f);
         }
+
+        animator.SetFloat("MoveX", direction.x);
+        animator.SetFloat("MoveY", direction.y);
 
     }
 
-    void AttackPlayer()
+    void Attack()
+    {
+        lastAttackTime = Time.time;
+        
+        enemy.linearVelocity = Vector2.zero;
+        animator.SetFloat("Speed", 0f);
+
+        animator.SetTrigger("Attack"); 
+        Debug.Log("Attacking!");
+    }
+
+
+    public void EnableAttackHitbox()
+    {
+        Debug.Log("WOWWWWWW");
+        if (AttackHitbox != null)
+        {
+            Debug.Log("Hitbox Enabled");
+
+            AttackHitbox.SetActive(true);
+        }
+    }
+
+    public void DisableAttackHitbox()
     {
         if (AttackHitbox != null)
         {
-            AttackHitbox.SetActive(true);
-            Debug.Log("Hi");
-        }
-    }
-
-
-    void DisableAttackHitbox()
-    {
-        if (AttackHitbox != null)
+            Debug.Log("Hitbox Disabled");
             AttackHitbox.SetActive(false);
+            
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -114,7 +139,6 @@ public class Enemy : MonoBehaviour
         {
             playerInRange = true;
             player = other.transform;
-            AttackPlayer();
         }
     }
 /*

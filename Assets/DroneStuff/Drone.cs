@@ -50,7 +50,7 @@ public class Drone : MonoBehaviour
 
         if (!located)
         {
-                    DetectPlayer();
+            DetectPlayer();
         }
     }
 
