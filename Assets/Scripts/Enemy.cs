@@ -108,16 +108,16 @@ public class Enemy : MonoBehaviour
         animator.SetFloat("Speed", 0f);
 
         animator.SetTrigger("Attack"); 
-        Debug.Log("Attacking!");
+        //Debug.Log("Attacking!");
     }
 
 
     public void EnableAttackHitbox()
     {
-        Debug.Log("WOWWWWWW");
+        //Debug.Log("WOWWWWWW");
         if (AttackHitbox != null)
         {
-            Debug.Log("Hitbox Enabled");
+            //Debug.Log("Hitbox Enabled");
 
             AttackHitbox.SetActive(true);
         }
@@ -127,7 +127,7 @@ public class Enemy : MonoBehaviour
     {
         if (AttackHitbox != null)
         {
-            Debug.Log("Hitbox Disabled");
+            //Debug.Log("Hitbox Disabled");
             AttackHitbox.SetActive(false);
             
         }
