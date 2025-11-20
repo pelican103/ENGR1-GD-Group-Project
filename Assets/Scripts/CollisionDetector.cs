@@ -4,25 +4,23 @@ using UnityEngine.Events;
 public class CollisionDetector : MonoBehaviour
 {
     [SerializeField]
-    private string colliderScript;
-
-    [SerializeField]
     private UnityEvent collisionEnter;
 
     [SerializeField]
     private UnityEvent collisionExit;
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.GetComponent(colliderScript))
+        Debug.Log("Stepping on button");
+        if (col.gameObject.CompareTag("Player"))
         {
             collisionEnter?.Invoke();
         }
     }
 
-    private void OnCollisionExit2D(Collision2D col)
+    private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.GetComponent(colliderScript))
+        if (col.gameObject.CompareTag("Player"))
         {
             collisionExit?.Invoke();
         }

@@ -46,11 +46,17 @@ TagManager:
   - name: Floor
     uniqueID: 4245327641
     locked: 0
-  - name: Env Items
-    uniqueID: 666436143
+  - name: Lava
+    uniqueID: 3253977021
     locked: 0
   - name: Walls
     uniqueID: 2955568883
+    locked: 0
+  - name: Env Items
+    uniqueID: 666436143
+    locked: 0
+  - name: Player + Enemies
+    uniqueID: 3459290331
     locked: 0
   m_RenderingLayers:
   - Default
