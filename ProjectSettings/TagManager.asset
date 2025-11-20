@@ -46,6 +46,9 @@ TagManager:
   - name: Lava
     uniqueID: 3253977021
     locked: 0
+  - name: Doors
+    uniqueID: 4251510639
+    locked: 0
   - name: Walls
     uniqueID: 2955568883
     locked: 0

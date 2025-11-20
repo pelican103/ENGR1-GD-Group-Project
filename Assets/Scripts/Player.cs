@@ -103,4 +103,5 @@ public class Player : MonoBehaviour
         roll_counter = rollDistance;
         lockedinput = (input2d == Vector2.zero) ? direction : input2d;
     }
+
 }
