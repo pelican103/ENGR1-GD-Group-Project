@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 3302448948105062749}
   - component: {fileID: 8153694420738909672}
   - component: {fileID: 4157126279868298870}
+  - component: {fileID: 552675175596920435}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -481,3 +482,20 @@ MonoBehaviour:
   playerLight: {fileID: 4536297822641038018}
   duration: 12
   endRadius: 1
+--- !u!114 &552675175596920435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5116716970386627376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28d076d7c0189eb4bb33da2a7568f045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 5
+  enemy: Enemy
+  slider: {fileID: 0}
+  currentHealth: 5
+  healthUI: {fileID: 0}
