@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 0aedd4fb70681cb47a6ab1dc61624c4a
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Room2.unity
+    guid: 63a819921c0075f42b8c8a0c23199ab9
+  - enabled: 1
+    path: Assets/Scenes/CIty1.unity
+    guid: d081a081909870f41ad67d49ab5c6578
   - enabled: 1
     path: Assets/Scenes/Ivan.unity
     guid: dc9f4b84b848c413284f23455a883504
