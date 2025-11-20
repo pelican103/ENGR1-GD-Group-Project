@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] float maxHealth = 3;
     [SerializeField] string enemy;
+    [SerializeField] Slider slider;
     public float currentHealth; 
+    public GameObject healthUI;
 
     void Start()
     {
-        currentHealth = maxHealth; 
+        slider.maxValue = maxHealth;
+        slider.value = maxHealth;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -24,11 +28,15 @@ public class Health : MonoBehaviour
             if (hurtComponent != null)
             {
                 float damage = hurtComponent.damageAmount;
-                currentHealth -= damage;
+                slider.value -= damage;
 
                 //xlamping so health never goes below zero
-                currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-                Debug.Log(currentHealth);
+                slider.value = Mathf.Clamp(slider.value, 0, maxHealth);
+                Debug.Log(slider.value);
+            }
+            if (slider.value == 0)
+            {
+                healthUI.SetActive(false);
             }
             else
             {
@@ -39,7 +47,7 @@ public class Health : MonoBehaviour
 
     public float GetCurrentHealth()
     {
-        return currentHealth; 
+        return slider.value; 
     }
 
     public float GetMaxHealth()

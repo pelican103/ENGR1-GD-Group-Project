@@ -35,6 +35,11 @@ public class Player : MonoBehaviour
         spriteRenderer  = GetComponent<SpriteRenderer>  ()                  ;
         direction       = Vector2.down                                      ;
         pen.SetActive ( false ) ;
+
+        //DOnt Destroy On Load
+        DontDestroyOnLoad(this.gameObject);
+        //reset position to 0 0 0
+        this.gameObject.transform.position = Vector3.zero;
     }
 
     void Update()
