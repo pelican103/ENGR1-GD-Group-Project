@@ -11,7 +11,6 @@ public class CollisionDetector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Stepping on button");
         if (col.gameObject.CompareTag("Player"))
         {
             collisionEnter?.Invoke();

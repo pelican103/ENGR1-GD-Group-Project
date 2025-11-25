@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "ENGR1-GD-Group-Project (OFFICIAL).slnx"
+    "dotnet.defaultSolution": "ENGR1-GD-Group-Project.slnx"
 }
