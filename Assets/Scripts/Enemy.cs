@@ -125,6 +125,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void PlayAttackSound()
+    {
+    AttackHitbox.GetComponent<AudioSource>().Play();
+    }
+    
+
     public void DisableAttackHitbox()
     {
         if (AttackHitbox != null)
