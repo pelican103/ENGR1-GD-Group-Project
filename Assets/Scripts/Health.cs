@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //check tag of other object, if labelled "hurt" then increase damage by its "hurt" value
-        //Debug.Log("ccollide");
+        Debug.Log("ccollide");
         if (other.gameObject.CompareTag(enemy))
         {
             //get hurt value

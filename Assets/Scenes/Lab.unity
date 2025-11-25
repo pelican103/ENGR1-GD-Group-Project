@@ -8795,6 +8795,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1181452239462230972, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2767832764326503324, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.11
@@ -8835,9 +8839,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 4157126279868298870, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: duration
       value: 30
+=======
+    - target: {fileID: 3159552671909795981, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 4536297822641038018, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: m_Color.b
@@ -8850,6 +8860,10 @@ PrefabInstance:
     - target: {fileID: 4536297822641038018, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: m_Color.r
       value: 0.94072014
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536297822641038018, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5116716970386627376, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: m_Name
