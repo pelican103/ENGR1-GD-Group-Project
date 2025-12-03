@@ -42,6 +42,11 @@ public class Player : MonoBehaviour
         this.gameObject.transform.position = Vector3.zero;
     }
 
+    void Awake()
+    {
+        this.gameObject.transform.position = Vector3.zero;
+    }
+
     void Update()
     {
         if (animator==null) return;

@@ -675,7 +675,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 5
   enemy: Player
+  slider: {fileID: 0}
   currentHealth: 0
+  healthUI: {fileID: 0}
 --- !u!1 &347040535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1632,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 5
   enemy: Player
+  slider: {fileID: 0}
   currentHealth: 0
+  healthUI: {fileID: 0}
 --- !u!1 &748773700
 GameObject:
   m_ObjectHideFlags: 0
@@ -7107,7 +7111,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 5
   enemy: Player
+  slider: {fileID: 0}
   currentHealth: 0
+  healthUI: {fileID: 0}
 --- !u!1 &1284221492
 GameObject:
   m_ObjectHideFlags: 0
@@ -7429,7 +7435,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 5
   enemy: Player
+  slider: {fileID: 0}
   currentHealth: 0
+  healthUI: {fileID: 0}
 --- !u!1 &1350930780
 GameObject:
   m_ObjectHideFlags: 0
@@ -7669,7 +7677,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 5
   enemy: Player
+  slider: {fileID: 0}
   currentHealth: 0
+  healthUI: {fileID: 0}
 --- !u!1 &1355946749
 GameObject:
   m_ObjectHideFlags: 0
@@ -8282,7 +8292,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 5
   enemy: Player
+  slider: {fileID: 0}
   currentHealth: 0
+  healthUI: {fileID: 0}
 --- !u!1 &1659908847
 GameObject:
   m_ObjectHideFlags: 0
@@ -8522,7 +8534,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Health
   maxHealth: 5
   enemy: Player
+  slider: {fileID: 0}
   currentHealth: 0
+  healthUI: {fileID: 0}
 --- !u!1 &1698713529
 GameObject:
   m_ObjectHideFlags: 0
@@ -8801,11 +8815,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2767832764326503324, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2767832764326503324, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0565643
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2767832764326503324, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8839,15 +8853,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-    - target: {fileID: 4157126279868298870, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
-      propertyPath: duration
-      value: 30
-=======
     - target: {fileID: 3159552671909795981, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: m_TagString
       value: Player
->>>>>>> Stashed changes
+      objectReference: {fileID: 0}
+    - target: {fileID: 4157126279868298870, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
+      propertyPath: duration
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4536297822641038018, guid: 2258c7b7c94a59742b5624d5e5d815d3, type: 3}
       propertyPath: m_Color.b
