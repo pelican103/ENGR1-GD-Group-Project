@@ -88272,6 +88272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c1fad1081cc7274d8f5f19666ce6ca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitch
+  targetSceneName: CIty1
 --- !u!61 &2095228162
 BoxCollider2D:
   m_ObjectHideFlags: 0

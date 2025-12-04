@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class Player : MonoBehaviour
     private             SpriteRenderer  spriteRenderer  ;
     private             GameObject      pen             ;
 
+    Scene currentScene;
+    public Camera mainCamera;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,26 +41,50 @@ public class Player : MonoBehaviour
         pen.SetActive ( false ) ;
 
         //DOnt Destroy On Load
-        DontDestroyOnLoad(this.gameObject);
-        //reset position to 0 0 0
-        this.gameObject.transform.position = Vector3.zero;
+        //DontDestroyOnLoad(this.gameObject);  
     }
 
     void Awake()
     {
+        //this.gameObject.transform.position = Vector3.zero;
+        //reset position to 0 0 0
         this.gameObject.transform.position = Vector3.zero;
+
+        
+        //Debug.Log("Current Scene: " + currentScene.name);
+        
     }
 
     void Update()
     {
         if (animator==null) return;
         
-        animator.SetInteger ("Dir"      , (int)(direction.y + (2 * direction.x)));
+        animator.SetFloat ("Dir"      , direction.y + (2 * direction.x));
         animator.SetBool    ("Moving"   , input2d != Vector2.zero);
     }
 
     private void FixedUpdate()
     {
+        // currentScene = SceneManager.GetActiveScene();
+        // //return if current scene is called "LoseScreen1" or "LoseScreen2"
+        // if (currentScene.name == "LoseScreen1" || currentScene.name == "LoseScreen2") return;
+        // //turn maincamera off if scene is LoseSCreen1 or LoseScreen2
+        // if (currentScene.name == "LoseScreen1" || currentScene.name == "LoseScreen2")
+        // {
+        //     if (mainCamera != null)
+        //     {
+        //         mainCamera.gameObject.SetActive(false);
+        //     }
+        //     this.gameObject.transform.position = Vector3.zero;
+        // }
+        // else
+        // {
+        //     if (mainCamera != null)
+        //     {
+        //         mainCamera.gameObject.SetActive(true);
+        //     }
+        // }
+
         float tSpeed = speed;
         Vector2 dir = input2d;
         if (action_counter != 0) action_counter--;
@@ -95,6 +123,7 @@ public class Player : MonoBehaviour
     void OnAttack(InputValue value)
     {
         if (action_counter != 0) return;
+        animator.SetTrigger("Attack");
         action_counter = attackCD;
         attack_counter = attackLinger;
         pen.SetActive(true);

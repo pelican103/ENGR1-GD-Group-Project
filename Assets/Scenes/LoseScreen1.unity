@@ -146,18 +146,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293049145}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0021915191, w: -0.9999976}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 412271848}
   m_Father: {fileID: 397721530}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.17133336, y: 0.56166667}
-  m_AnchorMax: {x: 0.8198334, y: 0.90500003}
-  m_AnchoredPosition: {x: -3.4986877, y: 0.45429993}
-  m_SizeDelta: {x: -25.2167, y: -23.2846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.251}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.1270142, y: -0.7832031}
+  m_SizeDelta: {x: -20.892, y: -24.7277}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &293049147
 Animator:
@@ -390,6 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b600f896570a86c41a9aefd8cef32a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayButton
+  sceneName: Room2
 --- !u!1 &412271847
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +900,7 @@ Animator:
   m_GameObject: {fileID: 1813977964}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb22eb8b4020c334e8eba540dcbb8888, type: 2}
+  m_Controller: {fileID: 9100000, guid: e67326b703cd783419bdd9a6d89f9732, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -958,7 +959,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1501763853, guid: 26d75d4ef42c6d54892be4204d26b21c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54fc0196d436a6b41a01ece1e0536e91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -979,7 +980,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.56, y: 0.56, z: 0.56}
+  m_LocalScale: {x: 0.5555, y: 0.5555, z: 0.5555}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
