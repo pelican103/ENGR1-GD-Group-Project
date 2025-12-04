@@ -79,12 +79,13 @@ public class Drone : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, visionDist);
 
         // to visualize
-        //Debug.DrawRay(transform.position, dir * visionDist, Color.red);
+        Debug.DrawRay(transform.position, dir * visionDist, Color.red);
 
         //check for player hit
         if (hit.collider != null && hit.collider.CompareTag("Player"))
         {
             located = true;
+            Debug.Log("Player Detected!");
             if (direction < 1f)
             {
                 anim.SetTrigger("AtkDown");

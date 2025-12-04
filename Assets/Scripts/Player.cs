@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField]    float   speed           = 6 ;
     [SerializeField]    int     rollCD          = 50;
-    [SerializeField]    int     rollDistance    = 6 ;
+    [SerializeField]    int     rollDistance    = 600 ;
     [SerializeField]    int     rollSpeed       = 12;
     [SerializeField]    int     rollIframes     = 6 ;
     [SerializeField]    int     attackCD        = 6 ;
@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
 
     Scene currentScene;
     public Camera mainCamera;
+
+    [SerializeField] public GameObject lava;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -132,6 +134,7 @@ public class Player : MonoBehaviour
     void OnJump(InputValue value)
     {
         Debug.Log("Roll!");
+        //lava.SetActive(false);
         if (action_counter != 0) return;
         action_counter = rollCD;
         roll_counter = rollDistance;
