@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 552675175596920435}
   - component: {fileID: 3675044343704675973}
   - component: {fileID: 7651934199212355717}
+  - component: {fileID: -2891577695154217320}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -579,3 +580,35 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.25, y: 1.5625}
   m_EdgeRadius: 0
+--- !u!114 &-2891577695154217320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5116716970386627376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b8149eb850a2d4bab36938eebbe833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialoguePlayerTrigger
+  dialogue:
+    dialogueLines:
+    - "Jenny: Ow\u2026 that was a far jump down off the wall\u2026 I must be inside
+      the city now, though. I should check that I didn\u2019t lose anything while
+      jumping that wall."
+    - "Jenny: My pen\u2019s still here, thankfully. I saw the lights of some Government
+      surveillance robots from atop the wall that I might need to disable with this."
+    - 'Jenny: And my lantern is definitely still here.'
+    - "Jenny: Though the lantern\u2019s battery is draining faster than I\u2019d
+      like and the light is dimming with it\u2026 I\u2019ll need to find batteries
+      in the city to maintain the light."
+    - "Jenny: \u2026"
+    - "Jenny: Alright, be brave, Jenny. You\u2019re here to find your sister and
+      all the other missing people who worked in this city."
+    - "Jenny: Well, I already snuck in so\u2026 Too late to go back now! I guess
+      I had better continue forward."
+    - Use WASD to walk.
+    - Press the space bar to roll.
+    - "Click to attack with Jenny\u2019s pen."
+    - Press E to interact with items in the city.
