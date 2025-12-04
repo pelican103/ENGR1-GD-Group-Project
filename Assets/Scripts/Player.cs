@@ -6,14 +6,14 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]    float   speed           = 6 ;
-    [SerializeField]    int     rollCD          = 50;
-    [SerializeField]    int     rollDistance    = 600 ;
-    [SerializeField]    int     rollSpeed       = 12;
-    [SerializeField]    int     rollIframes     = 6 ;
-    [SerializeField]    int     attackCD        = 6 ;
-    [SerializeField]    float   attackDMG       = 6 ;
-    [SerializeField]    int     attackLinger    = 6 ;
+    [SerializeField] public    float   speed           = 6 ;
+    [SerializeField] public    int     rollCD          = 50;
+    [SerializeField] public    int     rollDistance    = 600 ;
+    [SerializeField] public    int     rollSpeed       = 12;
+    [SerializeField] public    int     rollIframes     = 6 ;
+    [SerializeField] public    int     attackCD        = 6 ;
+    [SerializeField] public    float   attackDMG       = 6 ;
+    [SerializeField] public    int     attackLinger    = 6 ;
 
     public             int     action_counter  = 0 ;
     private             int     attack_counter  = 0 ;
@@ -31,10 +31,11 @@ public class Player : MonoBehaviour
 
     Scene currentScene;
     public Camera mainCamera;
-
+    public static Player Instance;
     [SerializeField] public GameObject lava;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         // Initialize Variables
@@ -52,6 +53,7 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
+        Instance = this;
         //this.gameObject.transform.position = Vector3.zero;
         //reset position to 0 0 0
         this.gameObject.transform.position = Vector3.zero;

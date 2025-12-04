@@ -6,6 +6,15 @@ using UnityEngine;
 public class SkillManager : MonoBehaviour
 {
 
+    //Base stats
+    float speed = 6;
+    int rollCD = 50;
+    int rollDistance = 600;
+    int rollSpeed = 12;
+    int rollIframes = 6;
+    int attackCD = 6;
+    float attackDMG = 6;
+    int attackLinger = 6;
 
     public static SkillManager Instance;
     
@@ -292,11 +301,55 @@ public class SkillManager : MonoBehaviour
 
     public void RefreshPlayerStats()
     {
-        int selectedCount = 0;
+        Player p = Player.Instance;
+        p.speed           =   speed;
+        p.rollCD          =   rollCD;
+        p.rollDistance    =   rollDistance;
+        p.rollSpeed       =   rollSpeed;
+        p.rollIframes     =   rollIframes;
+        p.attackCD        =   attackCD;
+        p.attackDMG       =   attackDMG;
+        p.attackLinger    =   attackLinger;
         foreach (KeyValuePair<string, SkillData> pair in skillMap)
         {
             if (pair.Value.enabled)
-                selectedCount++;
+            {
+                switch (pair.Value.statType)
+                {
+                    case SkillStatType.HP:
+                        break;
+                    case SkillStatType.SPD:
+                        p.speed++;
+                        break;
+                    case SkillStatType.Battery:
+                        break;
+                    case SkillStatType.LightDistance:
+                        break;
+                    case SkillStatType.Radius:
+                        break;
+                    case SkillStatType.AtkSpeed:
+                        p.attackCD--;
+                        break;
+                    case SkillStatType.AtkDmg:
+                        p.attackDMG++;
+                        break;
+                    case SkillStatType.AtkRange:
+                        p.attackLinger++;
+                        break;
+                    case SkillStatType.RollDistance:
+                        p.rollDistance++;
+                        break;
+                    case SkillStatType.SpdBoost:
+                        p.rollSpeed++;
+                        break;
+                    case SkillStatType.RollCD:
+                        p.rollCD--;
+                        break;
+                    case SkillStatType.Invulnerability:
+                        p.rollIframes++;
+                        break;
+                }
+            }
         }
 
     }
