@@ -5,8 +5,6 @@ public class Chest : MonoBehaviour, IInteractable
 {
     private Animator animator;
     public bool isOpened { get; private set; } = false;
-
-    [SerializeField] private UnityEvent onOpen;
     public void Awake()
     {
         animator = GetComponent<Animator>();
