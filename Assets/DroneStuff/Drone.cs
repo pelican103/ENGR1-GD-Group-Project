@@ -5,6 +5,7 @@ public class Drone : MonoBehaviour
 {
     float direction = 0;
     [SerializeField] float visionDist = 5f;
+    [SerializeField] float offset = 1f;
     float recover = 1.5f;
     bool located = false;
 
@@ -76,10 +77,10 @@ public class Drone : MonoBehaviour
         }
 
         //raycast forward
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, visionDist);
+        Vector2 origin = (Vector2)transform.position + dir * offset;
 
-        // to visualize
-        Debug.DrawRay(transform.position, dir * visionDist, Color.red);
+        RaycastHit2D hit = Physics2D.Raycast(origin, dir, visionDist);
+        //Debug.DrawRay(origin, dir * visionDist, Color.red);
 
         //check for player hit
         if (hit.collider != null && hit.collider.CompareTag("Player"))

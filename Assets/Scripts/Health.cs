@@ -79,5 +79,15 @@ public class Health : MonoBehaviour
     {
         return maxHealth; 
     }
+
+    public void IncreaseHealth(float amount)
+    {
+        currentHealth += amount;
+        if (slider != null)
+        {
+            slider.value += amount;
+            slider.value = Mathf.Clamp(slider.value, 0, maxHealth);
+        }
+    }
 }
 

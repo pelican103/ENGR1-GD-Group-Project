@@ -4,6 +4,12 @@ Team Red
 Game: ANU
 
 
+
+visual assets used: 
+
+Lower Pixel Font by IbraCreative on 1001fonts
+
+
 audio assets used:
 
 epson receipt printer3 by azumarill on freesound

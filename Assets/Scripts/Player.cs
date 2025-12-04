@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -133,12 +134,36 @@ public class Player : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        Debug.Log("Roll!");
-        //lava.SetActive(false);
         if (action_counter != 0) return;
+
+        animator.SetTrigger("Roll");
+
         action_counter = rollCD;
         roll_counter = rollDistance;
+
         lockedinput = (input2d == Vector2.zero) ? direction : input2d;
+
+        StartCoroutine(RollCoroutine());
+    }
+
+    IEnumerator RollCoroutine()
+    {
+        //disable lava
+        if (lava != null)
+        {
+            lava.SetActive(false);
+        }
+
+        float time = rollDistance / (float)rollSpeed; 
+
+        while (roll_counter > 0)
+            yield return null;   //wait until roll_counter hits 0
+
+        // Re-enable object
+        if (lava != null)
+        {
+            lava.SetActive(true);
+        }
     }
 
 }
