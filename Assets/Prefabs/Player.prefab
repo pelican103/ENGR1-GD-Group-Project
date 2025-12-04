@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1032913772487034077}
   - component: {fileID: 1181452239462230972}
   - component: {fileID: 9180144550731635657}
+  - component: {fileID: 789452628161165964}
   m_Layer: 0
   m_Name: PenHB
   m_TagString: Untagged
@@ -137,6 +138,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &789452628161165964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3159552671909795981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aac4962a3cca23240a7763f32a21ec80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hurt
+  damageAmount: 1
 --- !u!1 &4332320178156071200
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +515,9 @@ MonoBehaviour:
   slider: {fileID: 0}
   currentHealth: 5
   healthUI: {fileID: 0}
+  onHealthDepleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &3675044343704675973
 MonoBehaviour:
   m_ObjectHideFlags: 0

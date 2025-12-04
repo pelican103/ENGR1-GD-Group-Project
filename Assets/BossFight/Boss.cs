@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class Boss : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Boss : MonoBehaviour
 
     Animator anim;
     bool startedSpawning = false;
+
+    [SerializeField] UnityEvent onAllWiresGone;
     
     void Start()
     {
@@ -30,7 +33,13 @@ public class Boss : MonoBehaviour
             StartCoroutine(SpawnLoop());
         }
 
-        
+        if (AllWiresGone())
+        {
+            if (onAllWiresGone != null)
+            {
+                onAllWiresGone.Invoke();
+            }
+        }
     }
 
     bool AllWiresGone()

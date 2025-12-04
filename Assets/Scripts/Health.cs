@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
@@ -10,17 +11,33 @@ public class Health : MonoBehaviour
     [SerializeField] Slider slider;
     public float currentHealth; 
     public GameObject healthUI;
+    [SerializeField] UnityEvent onHealthDepleted;
 
     void Start()
     {
+        if (slider == null)
+        {
+            return;
+        }
         slider.maxValue = maxHealth;
         slider.value = maxHealth;
+    }
+
+    void FixedUpdate()
+    {
+        if (currentHealth <= 0)
+        {
+            if (onHealthDepleted != null)
+            {
+                onHealthDepleted.Invoke();
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         //check tag of other object, if labelled "hurt" then increase damage by its "hurt" value
-        Debug.Log("ccollide");
+        //Debug.Log("ccollide");
         if (other.gameObject.CompareTag(enemy))
         {
             //get hurt value
@@ -28,20 +45,28 @@ public class Health : MonoBehaviour
             if (hurtComponent != null)
             {
                 float damage = hurtComponent.damageAmount;
-                slider.value -= damage;
+                currentHealth -= damage;
+                if (slider != null)
+                {
+                    slider.value -= damage;
 
-                //xlamping so health never goes below zero
-                slider.value = Mathf.Clamp(slider.value, 0, maxHealth);
-                Debug.Log(slider.value);
+                    //xlamping so health never goes below zero
+                    slider.value = Mathf.Clamp(slider.value, 0, maxHealth);
+                    Debug.Log(slider.value);
+                }
             }
-            if (slider.value == 0)
+            if (slider != null)
             {
-                healthUI.SetActive(false);
+                if (slider.value == 0)
+                {
+                    healthUI.SetActive(false);
+                }
+                else
+                {
+                    return;
+                }
             }
-            else
-            {
-                return;
-            }
+        Debug.Log(currentHealth);
         }
     }
 
