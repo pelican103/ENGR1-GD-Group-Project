@@ -407,6 +407,9 @@ MonoBehaviour:
   attackLinger: 8
   action_counter: 0
   roll_counter: 0
+  SkillPanel: {fileID: 0}
+  mainCamera: {fileID: 0}
+  lava: {fileID: 0}
 --- !u!114 &3302448948105062749
 MonoBehaviour:
   m_ObjectHideFlags: 0
