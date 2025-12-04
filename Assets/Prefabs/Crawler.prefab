@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2934515381417583832}
   - component: {fileID: 5625983145515208424}
   - component: {fileID: 1688690119752384230}
+  - component: {fileID: 667067395856412806}
   m_Layer: 0
   m_Name: Crawler
   m_TagString: Untagged
@@ -205,6 +206,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &667067395856412806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74280937608115929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28d076d7c0189eb4bb33da2a7568f045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  maxHealth: 3
+  enemy: Player
+  slider: {fileID: 0}
+  currentHealth: 3
+  healthUI: {fileID: 0}
+  onHealthDepleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 74280937608115929}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5891291234212984180
 GameObject:
   m_ObjectHideFlags: 0
