@@ -52,7 +52,7 @@ public class Health : MonoBehaviour
 
                     //xlamping so health never goes below zero
                     slider.value = Mathf.Clamp(slider.value, 0, maxHealth);
-                    Debug.Log(slider.value);
+                    //Debug.Log(slider.value);
                 }
             }
             if (slider != null)
@@ -66,7 +66,7 @@ public class Health : MonoBehaviour
                     return;
                 }
             }
-        Debug.Log(currentHealth);
+        //Debug.Log(currentHealth);
         }
     }
 

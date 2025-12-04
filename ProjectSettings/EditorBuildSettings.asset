@@ -17,15 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseScreen1.unity
     guid: f999d8670413bf34dbcca443e4d59cb2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CIty1.unity
     guid: d081a081909870f41ad67d49ab5c6578
   - enabled: 1
     path: Assets/Scenes/LoseScreen2.unity
     guid: b89aab64c49735444826dcdc7059ae3e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Lab.unity
     guid: 9bec99302cc471b4c964d53fd71835b9
+  - enabled: 1
+    path: Assets/Scenes/lockedroom.unity
+    guid: 1df99f0971efc78469483b99eeaabcd3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

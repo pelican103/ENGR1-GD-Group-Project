@@ -54394,6 +54394,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866479938}
   m_CullTransparentMesh: 1
+--- !u!95 &866479944
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866479938}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89b71b57b0fde01418c15639cbe9eb05, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &947273489
 GameObject:
   m_ObjectHideFlags: 0
@@ -54748,6 +54770,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7635335837029633798, guid: edbeaf30d0b8040848e0473832a52e87, type: 3}
       insertIndex: -1
       addedObject: {fileID: 866479940}
+    - targetCorrespondingSourceObject: {fileID: 7635335837029633798, guid: edbeaf30d0b8040848e0473832a52e87, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 866479944}
   m_SourcePrefab: {fileID: 100100000, guid: edbeaf30d0b8040848e0473832a52e87, type: 3}
 --- !u!1001 &1071544980
 PrefabInstance:
@@ -55914,7 +55939,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365895506}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -55977,7 +56002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c1fad1081cc7274d8f5f19666ce6ca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitch
-  targetSceneName: CIty1
+  targetSceneName: lockedroom
 --- !u!61 &1365895510
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -112242,7 +112267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c1fad1081cc7274d8f5f19666ce6ca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneSwitch
-  targetSceneName: CIty1
+  targetSceneName: Lab
 --- !u!61 &2095228162
 BoxCollider2D:
   m_ObjectHideFlags: 0

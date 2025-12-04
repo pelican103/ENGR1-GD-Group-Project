@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b600f896570a86c41a9aefd8cef32a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayButton
-  sceneName: CIty1
+  sceneName: Lab
 --- !u!1 &412271847
 GameObject:
   m_ObjectHideFlags: 0
