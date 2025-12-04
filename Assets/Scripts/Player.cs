@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Player : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class Player : MonoBehaviour
     private             Animator        animator        ;
     private             SpriteRenderer  spriteRenderer  ;
     private             GameObject      pen             ;
+    public              GameObject      SkillPanel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,6 +36,7 @@ public class Player : MonoBehaviour
         animator        = GetComponent<Animator>        ()                  ;
         spriteRenderer  = GetComponent<SpriteRenderer>  ()                  ;
         direction       = Vector2.down                                      ;
+        SkillPanel      = SkillManager.Instance.gameObject.GetComponent<Transform>().GetChild(0).gameObject ;
         pen.SetActive ( false ) ;
     }
 
@@ -88,6 +91,12 @@ public class Player : MonoBehaviour
         action_counter = attackCD;
         attack_counter = attackLinger;
         pen.SetActive(true);
+    }
+
+    void OnMenu(InputValue value)
+    {
+        bool newState = !SkillPanel.activeSelf;
+        SkillPanel.SetActive(newState);
     }
 
     void OnJump(InputValue value)
