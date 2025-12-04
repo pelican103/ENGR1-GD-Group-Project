@@ -31,6 +31,8 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
 
         currentTarget = pointA;
+
+        
         
         if (AttackHitbox != null)
             AttackHitbox.SetActive(false);
@@ -122,6 +124,12 @@ public class Enemy : MonoBehaviour
             AttackHitbox.SetActive(true);
         }
     }
+
+    public void PlayAttackSound()
+    {
+    AttackHitbox.GetComponent<AudioSource>().Play();
+    }
+    
 
     public void DisableAttackHitbox()
     {

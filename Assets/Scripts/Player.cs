@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.Rendering.DebugUI;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
     [SerializeField]    float   speed           = 6 ;
     [SerializeField]    int     rollCD          = 50;
-    [SerializeField]    int     rollDistance    = 6 ;
+    [SerializeField]    int     rollDistance    = 600 ;
     [SerializeField]    int     rollSpeed       = 12;
     [SerializeField]    int     rollIframes     = 6 ;
     [SerializeField]    int     attackCD        = 6 ;
@@ -27,6 +29,11 @@ public class Player : MonoBehaviour
     private             GameObject      pen             ;
     public              GameObject      SkillPanel;
 
+    Scene currentScene;
+    public Camera mainCamera;
+
+    [SerializeField] public GameObject lava;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,18 +45,52 @@ public class Player : MonoBehaviour
         direction       = Vector2.down                                      ;
         SkillPanel      = SkillManager.Instance.gameObject.GetComponent<Transform>().GetChild(0).gameObject ;
         pen.SetActive ( false ) ;
+
+        //DOnt Destroy On Load
+        //DontDestroyOnLoad(this.gameObject);  
+    }
+
+    void Awake()
+    {
+        //this.gameObject.transform.position = Vector3.zero;
+        //reset position to 0 0 0
+        this.gameObject.transform.position = Vector3.zero;
+
+        
+        //Debug.Log("Current Scene: " + currentScene.name);
+        
     }
 
     void Update()
     {
         if (animator==null) return;
         
-        animator.SetInteger ("Dir"      , (int)(direction.y + (2 * direction.x)));
+        animator.SetFloat ("Dir"      , direction.y + (2 * direction.x));
         animator.SetBool    ("Moving"   , input2d != Vector2.zero);
     }
 
     private void FixedUpdate()
     {
+        // currentScene = SceneManager.GetActiveScene();
+        // //return if current scene is called "LoseScreen1" or "LoseScreen2"
+        // if (currentScene.name == "LoseScreen1" || currentScene.name == "LoseScreen2") return;
+        // //turn maincamera off if scene is LoseSCreen1 or LoseScreen2
+        // if (currentScene.name == "LoseScreen1" || currentScene.name == "LoseScreen2")
+        // {
+        //     if (mainCamera != null)
+        //     {
+        //         mainCamera.gameObject.SetActive(false);
+        //     }
+        //     this.gameObject.transform.position = Vector3.zero;
+        // }
+        // else
+        // {
+        //     if (mainCamera != null)
+        //     {
+        //         mainCamera.gameObject.SetActive(true);
+        //     }
+        // }
+
         float tSpeed = speed;
         Vector2 dir = input2d;
         if (action_counter != 0) action_counter--;
@@ -88,6 +129,7 @@ public class Player : MonoBehaviour
     void OnAttack(InputValue value)
     {
         if (action_counter != 0) return;
+        animator.SetTrigger("Attack");
         action_counter = attackCD;
         attack_counter = attackLinger;
         pen.SetActive(true);
@@ -101,10 +143,36 @@ public class Player : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        Debug.Log("Roll!");
         if (action_counter != 0) return;
+
+        animator.SetTrigger("Roll");
+
         action_counter = rollCD;
         roll_counter = rollDistance;
+
         lockedinput = (input2d == Vector2.zero) ? direction : input2d;
+
+        StartCoroutine(RollCoroutine());
     }
+
+    IEnumerator RollCoroutine()
+    {
+        //disable lava
+        if (lava != null)
+        {
+            lava.SetActive(false);
+        }
+
+        float time = rollDistance / (float)rollSpeed; 
+
+        while (roll_counter > 0)
+            yield return null;   //wait until roll_counter hits 0
+
+        // Re-enable object
+        if (lava != null)
+        {
+            lava.SetActive(true);
+        }
+    }
+
 }

@@ -1,16 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] float maxHealth = 3;
     [SerializeField] string enemy;
+    [SerializeField] Slider slider;
     public float currentHealth; 
+    public GameObject healthUI;
+    [SerializeField] UnityEvent onHealthDepleted;
 
     void Start()
     {
-        currentHealth = maxHealth; 
+        if (slider == null)
+        {
+            return;
+        }
+        slider.maxValue = maxHealth;
+        slider.value = maxHealth;
+    }
+
+    void FixedUpdate()
+    {
+        if (currentHealth <= 0)
+        {
+            if (onHealthDepleted != null)
+            {
+                onHealthDepleted.Invoke();
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -25,26 +46,48 @@ public class Health : MonoBehaviour
             {
                 float damage = hurtComponent.damageAmount;
                 currentHealth -= damage;
+                if (slider != null)
+                {
+                    slider.value -= damage;
 
-                //xlamping so health never goes below zero
-                currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-                Debug.Log(currentHealth);
+                    //xlamping so health never goes below zero
+                    slider.value = Mathf.Clamp(slider.value, 0, maxHealth);
+                    //Debug.Log(slider.value);
+                }
             }
-            else
+            if (slider != null)
             {
-                return;
+                if (slider.value == 0)
+                {
+                    healthUI.SetActive(false);
+                }
+                else
+                {
+                    return;
+                }
             }
+        //Debug.Log(currentHealth);
         }
     }
 
     public float GetCurrentHealth()
     {
-        return currentHealth; 
+        return slider.value; 
     }
 
     public float GetMaxHealth()
     {
         return maxHealth; 
+    }
+
+    public void IncreaseHealth(float amount)
+    {
+        currentHealth += amount;
+        if (slider != null)
+        {
+            slider.value += amount;
+            slider.value = Mathf.Clamp(slider.value, 0, maxHealth);
+        }
     }
 }
 

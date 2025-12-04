@@ -420,4 +420,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac4962a3cca23240a7763f32a21ec80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hurt
-  damageAmount: 5
+  damageAmount: 2
