@@ -3,7 +3,7 @@ using UnityEngine;
 public class Chest : MonoBehaviour, IInteractable
 {
     private Animator animator;
-    public bool isOpened { get; private set; }
+    public bool isOpened { get; private set; } = false;
     public void Awake()
     {
         animator = GetComponent<Animator>();
@@ -27,6 +27,11 @@ public class Chest : MonoBehaviour, IInteractable
             isOpened = true;
             Open();
         }
+    }
+
+    public void Next()
+    {
+        return;
     }
 
 }
