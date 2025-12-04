@@ -9,21 +9,16 @@ public class InteractionDetector : MonoBehaviour
 
     public void OnInteract(InputValue value)
     {
+        Debug.Log("Interact pressed");
         interactableInRange?.Interact();
-    }
-
-    public void OnNext(InputValue value)
-    {
-        Debug.Log("Next pressed in InteractionDetector");
-        interactableInRange?.Next();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.TryGetComponent(out IInteractable interactable) && interactable.IsInteractable())
         {
-            Debug.Log("Interactable in range");
             interactableInRange = interactable;
+            Debug.Log("Interactable in range");
         }
     }
 

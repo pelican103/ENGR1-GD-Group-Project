@@ -4,7 +4,9 @@ using UnityEngine.Events;
 public class Chest : MonoBehaviour, IInteractable
 {
     private Animator animator;
-    public bool isOpened { get; private set; } = false;
+    public bool isOpened { get; private set; }
+
+    [SerializeField] private UnityEvent onOpen;
     public void Awake()
     {
         animator = GetComponent<Animator>();
@@ -29,11 +31,6 @@ public class Chest : MonoBehaviour, IInteractable
             isOpened = true;
             Open();
         }
-    }
-
-    public void Next()
-    {
-        return;
     }
 
 }

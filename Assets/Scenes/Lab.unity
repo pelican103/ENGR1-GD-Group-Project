@@ -7889,7 +7889,6 @@ GameObject:
   - component: {fileID: 1355946750}
   - component: {fileID: 1355946752}
   - component: {fileID: 1355946753}
-  - component: {fileID: 1355946754}
   m_Layer: 0
   m_Name: Sister
   m_TagString: Untagged
@@ -8024,67 +8023,9 @@ MonoBehaviour:
   maxSpawnTime: 4
   xRange: {x: -15, y: 15}
   yRange: {x: -5, y: 15}
-  beforeBossDialogue:
-    dialogueLines:
-    - "As Jenny\u2019s lantern illuminates the room, a strange creature comes into
-      view."
-    - At the center is a humanoid figure, but sprouting from its back and limbs are
-      long tubes full of some mysterious dark liquids that connect it to various
-      parts of the room.
-    - "The creature wails, as though in great pain. As it does, Jenny gets a better
-      look at its oddly familiar face, one that \u2014 unlike all the creatures she
-      encountered outside \u2014 hasn\u2019t been deformed into unrecognition."
-    - 'Jenny: Jasmine!?'
-    - 'Jenny: Jasmine! What happened to you?!'
-    - "Jenny: What do I do?! I don\u2019t want to hurt my sister\u2026"
-    - "Jenny: Hm, it doesn\u2019t seem like she\u2019s been transformed the way the
-      people outside have been. Maybe if I just sever where those tubes are connected
-      to her body\u2026"
-  afterBossDialogue:
-    dialogueLines:
-    - "With the final tube severed, Jasmine falls limply to the ground, crumpling
-      into a heap \u2014 exhausted, but still alive, at least for now. Jenny runs
-      to her side."
-    - 'Jenny: Jasmine! Jasmine?! Are you okay?'
-    - "Jasmine: Jenny\u2026 is that you\u2026?"
-    - "Jenny: Yes! It\u2019s me! I came to find you!"
-    - "Jasmine: You\u2026came to find me? But\u2014 how\u2014? The monsters outside\u2026?"
-    - 'Jenny: I defeated them all, whatever they are.'
-    - "Jasmine: They\u2019re humans infected by the Rot\u2026 Oh\u2026 Jenny, I\u2019ve
-      done horrible things\u2026"
-    - "Jenny: What? No, Jasmine, it doesn\u2019t matter."
-    - "Jasmine: No! Listen to me, Jenny, quickly. The Government has been experimenting
-      with the Rot on humans. They\u2019re convinced that it\u2019s the key to extending
-      human life."
-    - "Jenny: What\u2026?"
-    - "Jasmine: The fact that I\u2019m still alive means that our last iteration
-      worked\u2026 and since you\u2019re here, the Government must not have found
-      me."
-    - "Jasmine: Jenny, you can\u2019t let them know about this. The cost to make
-      this serum is too great!"
-    - "Jenny: I\u2026 What about you\u2026?"
-    - "Jasmine: Ha\u2026 I was already infected by Rot when I hooked myself up to
-      the serum as a last ditch attempt to survive."
-    - "Jasmine: The serum sustained me for all this time, but it was only delaying
-      the inevitable. It\u2019s too late for me already\u2026"
-    - "Jenny: No\u2026! Isn\u2019t there anything I can do?! Please, Jasmine\u2026"
-    - "Jasmine: I\u2019m sorry, Jenny, I love you."
-    - "Jenny: \u2026 I love you, too."
   onAllWiresGone:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1355946754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355946749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43a06c1275014434aa61d6ff6fce40e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueBossTrigger
 --- !u!1 &1368671077
 GameObject:
   m_ObjectHideFlags: 0
