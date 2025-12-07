@@ -9,6 +9,8 @@ visual assets used:
 
 Lower Pixel Font by IbraCreative on 1001fonts
 
+Neo Zero - Cyberpunk City Top-Down Tileset by yanin on itch.io
+
 
 audio assets used:
 
