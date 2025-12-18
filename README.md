@@ -1,18 +1,17 @@
 # ENGR1-GD (Group Project)
 Team Red
 
-Game: ANU
+Game: ANU  
+Game Link: https://toastercosplay.itch.io/an-u 
 
-
-
-visual assets used: 
+Visual assets used: 
 
 Lower Pixel Font by IbraCreative on 1001fonts
 
 Neo Zero - Cyberpunk City Top-Down Tileset by yanin on itch.io
 
 
-audio assets used:
+Audio assets used:
 
 epson receipt printer3 by azumarill on freesound
 
