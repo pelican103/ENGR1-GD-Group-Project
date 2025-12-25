@@ -2,7 +2,7 @@
 Team Red
 
 Game: ANU  
-Game Link: https://toastercosplay.itch.io/an-u 
+Game Link: https://toastercosplay.itch.io/an-u (Click on ANU title to play!)
 
 Visual assets used: 
 
